@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include <locale.h> // Incluído para suporte a UTF-8
+#include <locale.h>
 
 typedef struct {
     char rua[30], bairro[20];
@@ -126,7 +126,7 @@ void mostrarDados(int i, Pessoa *pessoa1) {
 }
 
 int main(void) {
-    setlocale(LC_ALL, "pt_BR.UTF-8"); // Configura o locale para português brasileiro UTF-8
+    setlocale(LC_ALL, "pt_BR.UTF-8");
     int i;
     Pessoa pessoa1[3];
 
